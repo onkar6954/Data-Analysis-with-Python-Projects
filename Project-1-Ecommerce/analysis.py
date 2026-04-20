@@ -49,3 +49,12 @@ data = pd.read_csv('Data-Analysis-with-Python-Projects\Project-1-Ecommerce\Ecomm
 # print(data[(data['CC Provider']=='Mastercard') & (data['Purchase Price']>50)].count())  # using count
 
 """ Find the Email of the person with the following credit card number: 4664825258997302"""
+# print(data[data['Credit Card']== 4664825258997302]['Email'])
+
+""" How many prople purchase during the AM and how many purchase during PM"""
+# print(len(data[data['AM or PM']=='AM']),"People purchase during the AM")
+# print(len(data[data['AM or PM']=='PM']),"People purchase during the PM")
+# print(data['AM or PM'].value_counts()) # using .value_counts()
+
+""" How many people have a credit card that expires in 2020?"""
+# print(len(data[data['CC Exp Date'].str.contains('/20')]))

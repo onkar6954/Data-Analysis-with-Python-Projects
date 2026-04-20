@@ -46,12 +46,6 @@ This project is structured around solving real-world data analysis questions usi
 
 ---
 
-### 📧 Email Analysis
-
-15. Identify the **top 5 most popular email providers**
-
----
-
 ## 🎯 Learning Outcome
 
 Through these problems, the project demonstrates:

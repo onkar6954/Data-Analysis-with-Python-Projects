@@ -37,3 +37,6 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects\Project-2-Salaries\Salaries
 """ Total Number of Job Titles Contain Captain"""
 # print(df['JobTitle'])
 # print(df[df['JobTitle'].str.contains('CAPTAIN')])
+
+""" Display All the Employee Names From Fire Department"""
+# print(df[df['JobTitle'].str.contains('FIRE DEPARTMENT')]['EmployeeName'])

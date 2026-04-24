@@ -36,7 +36,10 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects\Project-2-Salaries\Salaries
 
 """ Total Number of Job Titles Contain Captain"""
 # print(df['JobTitle'])
-# print(df[df['JobTitle'].str.contains('CAPTAIN')])
+# print(len(df[df['JobTitle'].str.contains('CAPTAIN', case=False)]))
 
 """ Display All the Employee Names From Fire Department"""
-# print(df[df['JobTitle'].str.contains('FIRE DEPARTMENT')]['EmployeeName'])
+# print(df[df['JobTitle'].str.contains('FIRE DEPARTMENT, case=False')]['EmployeeName'])
+
+""" Find Minimum, Maximum, and Average BasePay"""
+print(df.describe())

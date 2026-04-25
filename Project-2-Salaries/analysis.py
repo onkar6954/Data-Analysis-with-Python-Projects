@@ -1,4 +1,6 @@
 """ Import Libraries"""
+from math import nan
+
 import pandas as pd
 
 """ Load DataSet"""
@@ -42,4 +44,9 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects\Project-2-Salaries\Salaries
 # print(df[df['JobTitle'].str.contains('FIRE DEPARTMENT, case=False')]['EmployeeName'])
 
 """ Find Minimum, Maximum, and Average BasePay"""
-print(df.describe())
+# print(df.describe())
+
+""" Replace 'Not Provided' in EmployeeName' Column to NaN"""
+# print(df.columns)
+# df['EmployeeName']=df['EmployeeName'].replace('Not provided',nan)
+# print(df['EmployeeName'])

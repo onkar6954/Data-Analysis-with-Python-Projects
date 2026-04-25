@@ -55,4 +55,7 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects\Project-2-Salaries\Salaries
 # print(df.drop(df[df.isnull().sum(axis=1)==5].index,axis=0))
 
 """ Find Job Title of ALBERT PARDINI"""
-print(df[df['EmployeeName']=='ALBERT PARDINI']['JobTitle'])
+# print(df[df['EmployeeName']=='ALBERT PARDINI']['JobTitle'])
+
+""" How Much ALBERT PARDINI Make (Include Benefits)?"""
+# print(df[df['EmployeeName']=='ALBERT PARDINI']['TotalPayBenefits'])

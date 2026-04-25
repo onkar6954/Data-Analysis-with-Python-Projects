@@ -53,3 +53,6 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects\Project-2-Salaries\Salaries
 
 """ Drop The Rows Having 5 Missing Values"""
 # print(df.drop(df[df.isnull().sum(axis=1)==5].index,axis=0))
+
+""" Find Job Title of ALBERT PARDINI"""
+print(df[df['EmployeeName']=='ALBERT PARDINI']['JobTitle'])

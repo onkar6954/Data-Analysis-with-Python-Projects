@@ -50,3 +50,6 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects\Project-2-Salaries\Salaries
 # print(df.columns)
 # df['EmployeeName']=df['EmployeeName'].replace('Not provided',nan)
 # print(df['EmployeeName'])
+
+""" Drop The Rows Having 5 Missing Values"""
+# print(df.drop(df[df.isnull().sum(axis=1)==5].index,axis=0))

@@ -16,3 +16,6 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects/Project-3-adults/adult.csv'
 
 """ Getting Information About Our Dataset Like Total Number Rows, Total Number of Columns, Datatypes of Each Column And Memory Requirement"""
 # print(df.info())
+
+""" Fetch Random Sample From the Dataset (50%)"""
+# print(df.sample(frac=0.5))

@@ -9,3 +9,7 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects/Project-3-adults/adult.csv'
 
 """ Check Last 10 Rows of The Dataset"""
 # print(df.tail(10))
+
+""" Find Shape of Our Dataset (Number of Rows And Number of Columns)"""
+# print(f"{df.shape[0]} Rows.")
+# print(f"{df.shape[1]} Columns.")

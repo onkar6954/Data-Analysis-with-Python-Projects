@@ -19,3 +19,4 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects/Project-3-adults/adult.csv'
 
 """ Fetch Random Sample From the Dataset (50%)"""
 # print(df.sample(frac=0.5))
+# print(df.sample(frac=0.5, random_state=100))   # it will give same sequence of random number

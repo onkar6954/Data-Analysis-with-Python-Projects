@@ -23,3 +23,5 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects/Project-3-adults/adult.csv'
 
 """ Check Null Values In The Dataset"""
 # print(df.isnull().sum())
+# sns.heatmap(df.isnull())
+# plt.show()

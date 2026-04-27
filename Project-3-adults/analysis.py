@@ -41,3 +41,8 @@ df['native-country']=df['native-country'].replace('?',np.nan)
 """ Drop all The Missing Values"""
 # df.dropna(how="any",inplace=True)
 # print(df.isnull().sum())
+
+""" Check For Duplicate Data and Drop Them"""
+# print(df.duplicated().any())
+# df=df.drop_duplicates()
+# print(df.duplicated().any())

@@ -30,10 +30,14 @@ df = pd.read_csv('Data-Analysis-with-Python-Projects/Project-3-adults/adult.csv'
 """ Perform Data Cleaning [ Replace '?' with NaN ]"""
 # print(df.tail(20))
 # print(df.isin(['?']).sum())
-# df['workclass']=df['workclass'].replace('?',np.nan)
-# df['occupation']=df['occupation'].replace('?',np.nan)
-# df['native-country']=df['native-country'].replace('?',np.nan)
+df['workclass']=df['workclass'].replace('?',np.nan)
+df['occupation']=df['occupation'].replace('?',np.nan)
+df['native-country']=df['native-country'].replace('?',np.nan)
 # print(df.isin(['?']).sum())
 # print(df.isnull().sum())
 # sns.heatmap(df.isnull())
 # plt.show()
+
+""" Drop all The Missing Values"""
+# df.dropna(how="any",inplace=True)
+# print(df.isnull().sum())

@@ -46,3 +46,6 @@ df['native-country']=df['native-country'].replace('?',np.nan)
 # print(df.duplicated().any())
 # df=df.drop_duplicates()
 # print(df.duplicated().any())
+
+""" Get overall statistics about the dataframe"""
+# print(df.describe())

@@ -11,5 +11,8 @@ data = pd.read_csv('titanic.csv')
 # print(data.tail(3))
 
 """ Find Shape of Our Dataset (Number of Rows & Number of Columns) """
-print("Number of Rows:",data.shape[0])
-print("Number of Columns:",data.shape[1])
+# print("Number of Rows:",data.shape[0])
+# print("Number of Columns:",data.shape[1])
+
+""" Get Information About Our Dataset Like Total Number Rows, Total Number of Columns, Datatypes of Each Column And Memory Requirement """
+print(data.info())

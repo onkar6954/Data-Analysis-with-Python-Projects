@@ -1,5 +1,8 @@
 import pandas as pd
 
-data = pd.read_csv('Project-4-Titanic/train.csv')
+data = pd.read_csv('titanic.csv')
 
-print(data)
+# print(data)
+
+""" Display Top 5 Rows of The Dataset """
+print(data.head())
